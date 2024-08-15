@@ -1,0 +1,100 @@
+spring:
+  application:
+    name: mugit
+
+  profiles:
+    include: swagger
+
+  config:
+    import:
+      - optional:file:env/backend/.env[.properties]
+      - optional:file:/mugit/yaml/config/application.properties
+
+  main:
+    web-application-type: servlet
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_DOMAIN}:${DB_PORT}/${DB_NAME}
+    username: ${DB_ID}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        default_batch_fetch_size: 1000
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  security:
+    user:
+      password: ${SPRING_USER_PASSWORD}
+      name: ${SPRING_USER_NAME}
+
+  session:
+    redis:
+      flush-mode: on_save
+      namespace: mugit
+
+  data:
+    redis:
+      host: ${SESSION_REDIS_HOST}
+      password: ${SESSION_REDIS_PASSWORD}
+      port: ${SESSION_REDIS_PORT}
+      repositories:
+        enabled: false
+
+  web:
+    resources:
+      static-locations: file:src/main/resources/templates/
+
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
+
+cookie:
+  domain: ${COOKIE_DOMAIN}
+
+oauth:
+  google:
+    userinfo:
+      url: https://www.googleapis.com/oauth2/v2/userinfo
+
+server:
+  error:
+    include-exception: true
+    include-stacktrace: always
+    whitelabel:
+      enabled: true
+  port: 8080
+  servlet:
+    session:
+      timeout: ${SESSION_TIMEOUT}
+      cookie:
+        name: JSESSIONID
+        path: /
+        domain: ${COOKIE_DOMAIN}
+        http-only: true
+        secure: true
+        max-age: ${SESSION_TIMEOUT}
+        same-site: none
+
+message:
+  api:
+    base-uri: ${SSE_SERVER}
+    send-uri: /message
+
+
+logging:
+  level:
+    root: ${ROOT_LOGGING_LEVEL}
+
+upload-path: ${UPLOAD_PATH}
+
+file-server: ${FILE_SERVER}
+
+redis:
+  topic: ${REDIS_TOPIC}

@@ -1,0 +1,70 @@
+{
+  "name": "mugit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@amcharts/amcharts5": "^5.9.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@headlessui/react": "^1.7.19",
+    "@mui/icons-material": "^5.15.17",
+    "@types/aos": "^3.0.7",
+    "@types/js-cookie": "^3.0.6",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@uiw/react-heat-map": "^2.2.2",
+    "@uiw/react-tooltip": "^4.22.3",
+    "@wavesurfer/react": "^1.0.5",
+    "aos": "^2.3.4",
+    "cookie": "^0.6.0",
+    "cors": "^2.8.5",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^11.1.8",
+    "jotai": "^2.8.0",
+    "js-cookie": "^3.0.5",
+    "next": "14.2.1",
+    "next-intl": "^3.12.0",
+    "next-svgr": "^0.0.2",
+    "p5": "^1.9.3",
+    "react": "^18",
+    "react-cookie": "^7.1.4",
+    "react-dom": "^18",
+    "react-loader-spinner": "^6.1.6",
+    "react-router-dom": "^6.23.1",
+    "react-studio-js": "^0.1.3",
+    "react-studio-js-types": "^1.0.1",
+    "standardized-audio-context": "^25.3.72",
+    "sweetalert2": "^11.10.8",
+    "tone": "^15.0.2",
+    "uuid": "^9.0.1",
+    "wavesurfer.js": "^7.7.11"
+  },
+  "devDependencies": {
+    "@types/event-emitter": "^0.3.5",
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^20",
+    "@types/p5": "^1.7.6",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.8",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.1",
+    "postcss": "^8.4.38",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}

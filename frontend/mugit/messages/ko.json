@@ -1,0 +1,106 @@
+{
+  "Landing": {
+    "title": "나만의 음악 Flow를 만들어 보세요",
+    "trends": "트렌드",
+    "trendsExp": "전 세계에서 가장 인기 있는 음악들을 탐색해 보세요.",
+    "trendsExp1": "다양한 음악을 듣다 보면 자신의 취향에 딱 맞는 음악을 발견하실 수 있습니다.",
+    "gotoTrend": "트렌드 둘러보기",
+    "note": "노트",
+    "noteExp": "나만의 음악 그래프를 만들어 보세요.",
+    "noteExp1": "그래프의 시작점인 Note에서 새로운 Flow를 생성할 수 있습니다.",
+    "noteExp2": "그리고 나만의 음원을 추가하여 원래 Note를 발전시켜 나갈 수 있습니다.",
+    "record": "레코드",
+    "recordExp": "하나의 Flow 안에는 여러 개의 Record가 포함됩니다.",
+    "recordExp1": "예를 들어, 기타 음원을 추가하고 그 다음에 드럼 음원을 추가할 수 있습니다.",
+    "recordExp2": "변경 사항이 있을 때마다 메시지를 기록할 수 있습니다.",
+    "release": "발행",
+    "releaseExp": "여러 개의 Record가 쌓여 완성된 Flow는 Release하여 전체 공개할 수 있습니다.",
+    "join": "MUGIT에 참여해보세요!"
+  },
+
+  "Trends": {
+    "search": "검색",
+    "browseGenres": "장르들에 따른 검색을 해보세요",
+    "title": "트렌드",
+    "searchSound": "       원하는 Sound를 검색하기",
+    "noResult": "검색 결과가 없습니다."
+  },
+  "Feed": {
+    "feedtitle": "여기는 피드입니다",
+    "feedExp": "MUGIT에서 좋아하는 아티스트를 팔로우하고 그들이 올리는 모든 트랙을 여기서 확인하세요.",
+    "feedExp1": "팔로우하는 사람들의 최신 게시물을 확인해보세요:"
+  },
+  "Flow": {
+    "newFlow": "새로운 플로우 만들기",
+    "details": "Details",
+    "tree": "음악 트리",
+    "comments": "댓글",
+    "writeComments": "댓글을 입력해주세요",
+    "newNote": "Note 생성하기",
+    "edit": "수정하기"
+  },
+  "Form": {
+    "note": "Note 이름",
+    "flow": "Flow 이름",
+    "tags": "태그",
+    "privacy": "권한 설정",
+    "description": "설명",
+    "descriptionPlaceholder": "Note에 대한 설명을 적어주세요",
+    "recordMessages": "레코드 메시지",
+    "cancel": "취소",
+    "save": "저장"
+  },
+  "Information": {
+    "note": "그래프의 시작점인 Note를 생성할 수 있습니다. 이 Note는 Flow 흐름들의 시작점이 됩니다.",
+    "flow": "그래프의 시작점인 Note에서 새로운 Flow를 생성할 수 있습니다. 새로운 Flow에 또 다른 Flow를 생성할 수 있습니다.",
+    "release": "여러 개의 Record가 쌓여 완성된 Flow는 Release하여 전체 공개할 수 있습니다."
+  },
+  "Navbar": {
+    "trends": "트렌드",
+    "profile": "프로필",
+    "support": "도움말",
+    "feed": "피드"
+  },
+  "Profile": {
+    "followers": "팔로워",
+    "followings": "팔로잉",
+    "follow": "팔로우",
+    "unfollow": "언팔로우",
+    "edit": "수정",
+    "cancel": "취소",
+    "save": "저장"
+  },
+  "Mugitory": {
+    "jan": "1월",
+    "feb": "2월",
+    "mar": "3월",
+    "apr": "4월",
+    "may": "5월",
+    "jun": "6월",
+    "jul": "7월",
+    "aug": "8월",
+    "sep": "9월",
+    "oct": "10월",
+    "nov": "11월",
+    "dec": "12월",
+    "sun": "일",
+    "mon": "월",
+    "tue": "화",
+    "wed": "수",
+    "thu": "목",
+    "fri": "금",
+    "sat": "토",
+    "date": "날짜",
+    "count": "횟수"
+  },
+  "Notification": {
+    "notice": "알림",
+    "read": "읽음",
+    "readall": "모두 읽음",
+    "noContent": "안 읽은 알림이 없습니다."
+  },
+  "Note": {
+    "chooseFile": "아니면 업로드할 파일은 선택해주세요",
+    "dragOrClick": "업로드하고 싶은 파일을 드래그앤드롭 해주세요"
+  }
+}

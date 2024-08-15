@@ -1,0 +1,3 @@
+[submodule "mugit/env"]
+	path = mugit/env
+	url = https://lab.ssafy.com/spearoad15/env.git

@@ -1,0 +1,37 @@
+spring:
+  config:
+    import:
+      - optional:file:env/backend/.env[.properties]
+      - optional:file:/mugit/yaml/config/application.properties
+
+  profiles:
+    include: swagger
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+  data:
+    redis:
+      host: ${SESSION_REDIS_HOST}
+      password: ${SESSION_REDIS_PASSWORD}
+      port: ${SESSION_REDIS_PORT}
+      repositories:
+        enabled: false
+
+  session:
+    redis:
+      flush-mode: on_save
+      namespace: mugit
+
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: DEBUG
+
+upload-path: ${UPLOAD_PATH}
+
+server:
+  port: 8090

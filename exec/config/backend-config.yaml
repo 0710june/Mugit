@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mugit-config
+
+data:
+  application.properties: |
+    DB_DOMAIN=mysql-main-service
+    DB_PORT=3307
+    DB_NAME=mugit_main_db
+    DB_ID=mugit
+    DB_PASSWORD=Mugit502!
+
+    COOKIE_DOMAIN=mugit.site
+    SESSION_TIMEOUT=86400
+    SESSION_REDIS_HOST=redis-session-service
+    SESSION_REDIS_PASSWORD=Mugit502!
+    SESSION_REDIS_PORT=6379
+
+    SPRING_USER_NAME=mugit
+    SPRING_USER_PASSWORD=Mugit502!
+
+    USER_SERVER=backend-service:8080
+
+    ROOT_LOGGING_LEVEL=info
+
+    UPLOAD_PATH=/file

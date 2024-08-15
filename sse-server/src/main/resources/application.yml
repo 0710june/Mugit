@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: mugit
+
+  profiles:
+    include: swagger
+
+  config:
+    import:
+      - optional:file:env/backend/.env[.properties]
+      - optional:file:/mugit/yaml/config/application.properties
+
+  security:
+    user:
+      password: ${SPRING_USER_PASSWORD}
+      name: ${SPRING_USER_NAME}
+
+  session:
+    redis:
+      flush-mode: on_save
+      namespace: mugit
+
+  data:
+    redis:
+      host: ${SESSION_REDIS_HOST}
+      password: ${SESSION_REDIS_PASSWORD}
+      port: ${SESSION_REDIS_PORT}
+      repositories:
+        enabled: false
+
+# emitter
+emitter:
+  timeout:
+    30000
+
+server:
+  error:
+    include-exception: true
+    include-stacktrace: always
+    whitelabel:
+      enabled: true
+  servlet:
+    session:
+      timeout: ${SESSION_TIMEOUT}
+      cookie:
+        name: JSESSIONID
+        path: /
+        domain: ${COOKIE_DOMAIN}
+        http-only: true
+        secure: true
+        max-age: ${SESSION_TIMEOUT}
+        same-site: none
+  port: 8082
+
+logging:
+  level:
+    root: ${ROOT_LOGGING_LEVEL}
+
+redis:
+  topic: ${REDIS_TOPIC}

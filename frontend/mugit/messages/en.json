@@ -1,0 +1,109 @@
+{
+  "Landing": {
+    "title": "Make Your Own Music Flow",
+    "trends": "Trends",
+    "trendsExp": "Explore the most popular music from around the world.",
+    "trendsExp1": "By listening to a variety of music, you can discover the perfect music that suits your taste.",
+    "gotoTrend": "Explore Trends",
+    "note": "Note",
+    "noteExp": "Create your own music graph.",
+    "noteExp1": "You can create a new Flow starting from the Note.",
+    "noteExp2": "And you can add your own music sources to develop the original Note.",
+    "record": "Record",
+    "recordExp": "A single Flow can contain multiple Records.",
+    "recordExp1": "For example, you can add a guitar sound source and then add a drum sound source.",
+    "recordExp2": "You can record messages whenever changes are made.",
+    "release": "Release",
+    "releaseExp": "The completed Flow, built up from multiple Records, can be Released and publicly shared.",
+    "join": "Thank you for listening. Now Join in!"
+  },
+
+  "Trends": {
+    "search": "Search",
+    "browseGenres": "Browse Genres",
+    "title": "Trends",
+    "searchSound": "        Search any Sound",
+    "noResult": "No Results"
+  },
+  "Support": {
+    "title": "What is Mugit?"
+  },
+  "Feed": {
+    "feedtitle": "This is your feed",
+    "feedExp": "Follow your favorite artists on MUGIT and see every track they post right here.",
+    "feedExp1": "Hear the latest posts from the people you’re following:"
+  },
+  "Flow": {
+    "newFlow": "New Flow",
+    "details": "Details",
+    "tree": "Tree",
+    "comments": "comments",
+    "writeComments": "Write a comment",
+    "newNote": "Create New Note",
+    "edit": "Edit"
+  },
+  "Form": {
+    "note": "Note Name",
+    "flow": "Flow Name",
+    "tags": "Tags",
+    "privacy": "Privacy",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe your Note",
+    "recordMessages": "Record Messages",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "Information": {
+    "note": "You can create a new Flow starting from the Note.",
+    "flow": "Short Explanations about Flow and How it works!",
+    "release": "The completed Flow, built up from multiple Records, can be Released and publicly shared."
+  },
+  "Navbar": {
+    "trends": "Trends",
+    "profile": "Profile",
+    "support": "Support",
+    "feed": "Feed"
+  },
+  "Profile": {
+    "followers": "Followers",
+    "followings": "Followings",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "Mugitory": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec",
+    "sun": "Sun",
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat",
+    "date": "date",
+    "count": "count"
+  },
+  "Notification": {
+    "notice": "Notice",
+    "read": "Read",
+    "readall": "Read All",
+    "noContent": "There're no unread notifications"
+  },
+  "Note": {
+    "chooseFile": "Or choose files to upload",
+    "dragOrClick": "Drag and drop files here"
+  }
+}

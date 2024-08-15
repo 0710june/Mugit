@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-main-service
+spec:
+  selector:
+    app: mysql-main-pod
+  ports:
+    - protocol: TCP
+      port: 3307
+      targetPort: 3307
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-main-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: ""
+  hostPath:
+    path: /mugit/data/main
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-main-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-main-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql-main-pod
+  template:
+    metadata:
+      labels:
+        app: mysql-main-pod
+    spec:
+      containers:
+        - name: mysql-main-pod
+          image: 1eaf/mysql_mugit
+          ports:
+            - containerPort: 3307
+          volumeMounts:
+            - name: mysql-main-pod
+              mountPath: /mugit/data/main
+      volumes:
+        - name: mysql-main-pod
+          persistentVolumeClaim:
+            claimName: mysql-main-pvc
